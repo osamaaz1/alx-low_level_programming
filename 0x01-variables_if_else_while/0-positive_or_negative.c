@@ -1,14 +1,14 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
- *main - Entry point
+
+/**
+ * main - entry point
  *
- *Description - using if statement to find if the number is pos or neg.
+ * Description: false or true validation
  *
- *Return: always 0 (Success).
- *
- * **/
+ * Return: always 0 (Success).
+*/
 
 int main(void)
 {
