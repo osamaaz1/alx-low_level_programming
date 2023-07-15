@@ -20,7 +20,7 @@ int main(void)
 			c = 'A';
 			continue;
 		}
-		c++
+		c++;
 	}
 
 	putchar('\n');
