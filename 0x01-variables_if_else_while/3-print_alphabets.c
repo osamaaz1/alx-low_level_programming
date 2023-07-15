@@ -15,7 +15,7 @@ int main(void)
 	while (c <= 'Z')
 	{
 		putchar(c);
-		if (c == z)
+		if (c == 'z')
 		{
 			c = 'A';
 			continue;
