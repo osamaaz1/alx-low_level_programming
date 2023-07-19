@@ -13,4 +13,5 @@ int _islower (int c)
 		return (1);
 	else if (c > 64 && c < 91)
 		return (0);
+	return (0);
 }
