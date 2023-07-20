@@ -7,7 +7,7 @@
  * Return: 1 if c is capital and 0 if c is small
 */
 
-int _islower(int c)
+int _isupper(int c)
 {
 	if (c >= 65 && c <= 90)
 		return (1);
