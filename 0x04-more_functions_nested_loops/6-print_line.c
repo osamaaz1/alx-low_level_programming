@@ -8,7 +8,7 @@
  * Return: nothing!
 */
 
-void more_numbers(int c)
+void print_line(int c)
 {
 	int dist;
 
