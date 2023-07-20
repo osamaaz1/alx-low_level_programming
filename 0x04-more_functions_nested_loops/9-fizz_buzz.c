@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 /**
  * main - Entry part
@@ -23,4 +22,5 @@ int main(void)
 			printf("%d", x);
 		printf(" ");
 	}
+	return (0);
 }
