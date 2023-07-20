@@ -9,16 +9,16 @@
 */
 void print_square(int c)
 {
-	int dist;
+	int row, col;
 
 	if (c < 0)
 	{
 		putchar('\n')
 		return;
 	}
-	for (dist = 0; dist < c; dist++)
+	for (row = 0; row < c; row++)
 	{
-		for (dist = 0; dist < c; dist++)
+		for (col = 0; col < c; col++)
 		{
 			_putchar('#');
 		}
