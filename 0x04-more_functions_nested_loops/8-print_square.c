@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_square - Entry part
- * @c: area of square
+ * @size: area of square
  *
  * Description: print square!
  *
