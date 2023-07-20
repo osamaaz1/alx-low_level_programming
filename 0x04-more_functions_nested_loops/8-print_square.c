@@ -7,18 +7,18 @@
  *
  * Return: nothing!
 */
-void print_square(int c)
+void print_square(int size)
 {
 	int row, col;
 
-	if (c < 0)
+	if (size < 0)
 	{
 		putchar('\n')
 		return;
 	}
-	for (row = 0; row < c; row++)
+	for (row = 0; row < size; row++)
 	{
-		for (col = 0; col < c; col++)
+		for (col = 0; col < size; col++)
 		{
 			_putchar('#');
 		}
