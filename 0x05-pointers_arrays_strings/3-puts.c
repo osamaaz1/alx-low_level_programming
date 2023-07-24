@@ -8,7 +8,7 @@
  *
  * Return: None.
  */
-void _put(char *str)
+void _puts(char *str)
 {
 	while (*str)
 	{
