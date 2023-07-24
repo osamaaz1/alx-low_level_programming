@@ -1,14 +1,13 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * main - check the code 
+ * reset_to_98 - main function.
+ *@n : pointer
  *
- * Return: Always 0.
+ * Description: Update the value of n
+ *
+ * Return: None.
  */
 void reset_to_98(int *n)
 {
-	int *updated = &n;
-
-	updated = 98;
+	int *n = 98;
 }
