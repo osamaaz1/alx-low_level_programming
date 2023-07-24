@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * print_array - prints n elements of an array of integers
- * @a: the array of integers
- * @n: the number of elements to be printed
+ * *_strcpy - prints n elements of an array of integers
+ * @dest : the array of integers
+ * @src : the number of elements to be printed
  *
- * Description: Print array
+ * Description: Write a function.
  *
- * Return : None
+ * Return : pointer to dest
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -18,5 +18,5 @@ char *_strcpy(char *dest, char *src)
 		i++;
 	}
 	dest[i] = '\0';
-	return dest;
+	return (dest);
 }
