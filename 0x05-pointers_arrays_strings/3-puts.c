@@ -7,7 +7,7 @@
  *
  * Return: None.
  */
-int _put(char *str)
+void _put(char *str)
 {
 	int i = 0;
 
