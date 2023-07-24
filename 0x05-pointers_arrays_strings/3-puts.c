@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
  * _puts - main function.
  * @str : char that want to count the lenth.
@@ -13,8 +15,8 @@ void _put(char *str)
 
 	while (str[i] != '\0')
 	{
-		_putchar(str[i]);
+		puts(str[i]);
 		i++;
 	}
-	_putchar('\n');
+	puts('\n');
 }
