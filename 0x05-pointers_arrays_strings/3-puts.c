@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _puts - main function.
@@ -11,12 +10,9 @@
  */
 void _put(char *str)
 {
-	int i = 0;
-
-	while (str[i] != '\0')
+	while (*str)
 	{
-		put(str[i]);
-		i++;
+		_putchar(*str++);
 	}
-	put('\n');
+	_putchar('\n');
 }
