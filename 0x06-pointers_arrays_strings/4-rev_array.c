@@ -1,19 +1,19 @@
 #include "main.h"
 
-/**
- * _strcmp - main function.
- * @s1 : first char
- * @s2 : sec char
+ /**
+ * reverse_array - Write a function that reverses the content of an array of
+ * integers.
  *
- * Description: used to compare two strings.
+ * @a: the array elements.
+ * @n: the number of elemetns.
  *
- * Return: compation between s1 and s2.
  */
+
 void reverse_array(int *a, int n)
 {
 	int i, j, temp;
 
-	for (i = 0; i < n-1; i++)
+	for (i = 0; i < n - 1; i++)
 	{
 		for (j = i + 1; j > 0; j--)
 		{
