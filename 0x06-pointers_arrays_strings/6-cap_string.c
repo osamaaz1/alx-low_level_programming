@@ -23,13 +23,13 @@ char *cap_string(char *str)
 				str[i] == '\n' || str[i] == ',' ||
 				str[i] == ';' || str[i] == '.' ||
 				str[i] == '!' || str[i] == '?' ||
-				str[i] == '\"' || str[i] == '(' ||
+				str[i] == '"' || str[i] == '(' ||
 				str[i] == ')' || str[i] == '{' ||
-				str[i] == '}' || str[i] == '"')
+				str[i] == '}')
 		{
-			if (str[i] >= 'a' && str[i] <= 'z')
+			if (str[i + 1] >= 97 && str[i + 1] <= 122)
 			{
-				str[i] -= 32;
+				str[i + 1] -= 32;
 			}
 		}
 
