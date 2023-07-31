@@ -13,7 +13,7 @@ char *_strpbrk(char *s, char *accept)
 {
 	unsigned int i, j;
 	int t = 0;
-	char *word = NULL;
+	char *word = 0;
 
 	for (i = 0; accept[i] != '\0'; i++)
 	{
