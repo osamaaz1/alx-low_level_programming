@@ -14,7 +14,7 @@ int _sqrt_recursive(int n, int g)
 {
 	if (g * g > n)
 		return (-1);
-	if (g * g == m)
+	if (g * g == n)
 		return (g);
 	return (_sqrt_recursive(n, g + 1));
 }
