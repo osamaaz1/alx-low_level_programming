@@ -26,7 +26,7 @@ int _abs(int nm)
 int is_prime_number(int n)
 {
 	n = _abs(n);
-	if (n % 2 == 0 || n % 3 == 0 || n == 1 || n == 0)
+	if (n % 2 == 0 || n % 3 == 0 || n == 1 || n == 0 || n == 7 )
 		return (0);
 	return (1);
 }
