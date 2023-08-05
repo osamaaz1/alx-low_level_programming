@@ -3,7 +3,8 @@
 /**
  * main - Entry part
  *
- * Description: program that prints all possible different combinations of three digits.
+ * Description: program that prints all possible
+ * different combinations of three digits.
  *
  * Return: always 0 (success).
 */
@@ -33,5 +34,5 @@ int main(void)
 		}
 	}
 	putchar('\n');
-	return(0);
+	return (0);
 }
