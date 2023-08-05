@@ -6,7 +6,7 @@
  *
  * Description: function to print the program name.
  *
- * Return: 0 if suc.
+ * Return: 0 if succ.
  */
 int main(int argc, char *argv[])
 {
