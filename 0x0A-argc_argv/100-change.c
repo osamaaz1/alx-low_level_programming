@@ -27,8 +27,8 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	int coints[] = {25, 10, 5, 2, 1};
-	int num_coins = sizedof(coins) / sizeof(coints[0]);
+	int coins[] = {25, 10, 5, 2, 1};
+	int num_coins = sizeof(coins) / sizeof(coins[0]);
 	int count = 0;
 	int i;
 
