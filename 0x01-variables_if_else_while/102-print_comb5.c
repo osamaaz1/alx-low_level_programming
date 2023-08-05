@@ -10,36 +10,25 @@
 */
 int main(void)
 {
+		int digit1, digit2;
 
-	int i, j, k;
-
-	for (i = 48; i < 58; i++)
+	for (digit1 = 0; digit1 <= 98; digit1++)
 	{
-		for (j = i; j < 58; j++)
+		for (digit2 = digit1 + 1; digit2 <= 99; digit2++)
 		{
-			for (k = j; k < 58; k++)
+			putchar((digit1 / 10) + '0');
+			putchar((digit1 % 10) + '0');
+			putchar(32);
+			putchar((digit2 / 10) + '0');
+			putchar((digit2 % 10) + '0');
+
+			if (digit1 / 10 != 9 || digit1 % 10 != 8)
 			{
-				if (i == j || j == k || i == k)
-				{
-					continue;
-				}
-				putchar(i);
-				putchar(j);
-				putchar(k);
-
-				if (i == 55 && j == 56 && k == 57)
-				{
-					break;
-				}
-				else
-				{
-					putchar(',');
-					putchar(' ');
-				}
-
+				putchar(44);
+				putchar(32);
 			}
 		}
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }
