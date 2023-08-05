@@ -12,7 +12,6 @@
 int main(void)
 {
 	int i, j, k;
-	int count = 0;
 
 	for (i = 0; i <= 7; i++)
 	{
@@ -24,12 +23,11 @@ int main(void)
 				putchar(j + '0');
 				putchar(k + '0');
 
-				if (count < 110)
+				if (i != 7 || j != 8 || k != 8)
 				{
 					putchar(',');
 					putchar(' ');
 				}
-				count++;
 			}
 		}
 	}
