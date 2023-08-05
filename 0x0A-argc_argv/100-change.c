@@ -6,11 +6,11 @@
  * @argc: arguments count
  * @argv: arguments vector
  *
- * Description: program should print the result of the summation.
+ * Description:  program that prints the minimum number of coins to make change for an amount of money
  *
  * Return: 0 if succ and 1 if failed
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv[])
 {
 	if (argc != 2)
 	{
