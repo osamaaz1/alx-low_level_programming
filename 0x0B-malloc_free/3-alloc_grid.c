@@ -8,7 +8,8 @@
  * @width: first string
  * @height: sec string
  *
- * Description: function that concatenates two strings.,
+ * Description: function that returns a pointer to
+ * a 2 dimensional array of integers.
  *
  * Return: Null if Failed, and string if succ
  */
