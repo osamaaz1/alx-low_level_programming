@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * str_concat - main function.
+ * alloc_grid - main function.
  * @width: first string
  * @height: sec string
  *
