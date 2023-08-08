@@ -19,7 +19,7 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
-	dup = (char *)malloc(sizeof(str) + 1);
+	dup = (char *)malloc(sizeof(strlen(str) + 1);
 
 	if (dup != NULL)
 		strcpy (dup, str);
