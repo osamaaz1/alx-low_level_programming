@@ -24,6 +24,16 @@ char *str_concat(char *s1, char *s2)
 	constr = (char *)malloc((len1 + len2 + 1) * sizeof(char));
 	if (constr == NULL)
 		return (NULL);
+	if (s1 == NULL)
+	{
+		strcat(constr, s2);
+		return (constr);
+	}
+	else if (s2 == NULL)
+	{
+		strcat(constr, s1);
+		return (constr);
+	}
 	strcat(constr, s1);
 	strcat(constr, s2);
 	return (constr);
