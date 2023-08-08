@@ -13,36 +13,41 @@
  * Return: Null if Failed, and string if succ
  */
 int **alloc_grid(int width, int height)
-{ 
+{
+	int i, j, a, b;
+	int **p;
+
 	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
-	int **grid;
-
-	**grid = (int **)malloc(height * sizeof(int *));
-    	if (grid == NULL)
+	else
 	{
-		return (NULL);
-    	}
-    	int i, j;
-
-    	for (i = 0; i < height; i++)
-	{
-		grid[i] = (int *)malloc(width * sizeof(int));
-		if (grid[i] == NULL)
+		p = (int **) malloc(height * sizeof(int *));
+		/* we have to make a malloc per pointer*/
+		if (!p)
 		{
-	    		for (j = 0; j < i; j++)
-			{
-				free(grid[j]);
-			}
-			free(grid);
+			free(p);
 			return (NULL);
 		}
-		for (j = 0; j < width; j++)
+		for (i = 0; i < height; i++)
 		{
-			grid[i][j] = 0;
+			p[i] = (int *) malloc(width * sizeof(int));
+			if (!p[i])
+			{
+				for (j = 0; j <= i; j++)
+					free(p[j]);
+				free(p);
+				return (NULL);
+			}
 		}
+		for (a = 0; a < height; a++)
+		{
+			for (b = 0; b < width; b++)
+			{
+				p[a][b] = 0;
+			}
+		}
+		return (p);
 	}
-	return (grid);
 }
