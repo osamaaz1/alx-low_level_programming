@@ -34,6 +34,8 @@ char *str_concat(char *s1, char *s2)
 		strcat(constr, s1);
 		return (constr);
 	}
+	else if (s1 == NULL && s2 == NULL)
+		return (NULL);
 	strcat(constr, s1);
 	strcat(constr, s2);
 	return (constr);
