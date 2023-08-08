@@ -7,7 +7,7 @@
  * @size: size of array
  * @c: elements
  *
- * Description: function that creates an array of chars, 
+ * Description: function that creates an array of chars,
  * and initializes it with a specific char.
  *
  * Return: Null if size = 0
@@ -20,9 +20,9 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 		return (NULL);
-	array = (char*)malloc(size * sizeof(char));
+	array = (char *)malloc(size * sizeof(char));
 
-	if(array == NULL)
+	if (array == NULL)
 		return (NULL);
 
 	for (i = 0; i < size; i++)
