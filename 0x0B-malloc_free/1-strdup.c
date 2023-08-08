@@ -15,7 +15,7 @@
  */
 char *_strdup(char *str)
 {
-	char *dup;
+	char *cpstr;
 	size_t len;
 
 	if (str == NULL)
